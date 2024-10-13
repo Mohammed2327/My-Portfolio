@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        My Portfolio
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b6427adc18.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidebar">
+                    <li> <a href="#header"> Home </a></li>
+                    <li> <a href="#aboutme"> About Me </a></li>
+                    <li> <a href="#services"> Services </a></li>
+                    <li> <a href="#portfolio"> Portfolio </a> </li>
+                    <li> <a href="#contact"> Contact </a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-txt">
+                <p> Hi, My name is</p>
+                <h2> <span> Mohammed Mujeebuddin</span></h2>
+                <h2> I'm a Frontend Developer </h2>
+
+            </div>
+        </div>
+    </div>
+
+    <!-----------About------------->
+    <div id="aboutme">
+        <div class="container">
+            <div class="about-col-1">
+                <h1 class="sub-title"> About Me</h1>
+                <p> I'm Mohammed Mujeebuddin, Highly skilled Frontend developer with 2
+                    years of experience in building responsive and scalable web
+                    applications using ReactJS. Proficient in designing and developing
+                    reusable UI components, managing state with Redux, and integrating
+                    APIs for seamless data exchange. Strong understanding of modern
+                    front-end development best practices, including responsive design
+                    and accessibility.
+                </p>
+            </div>
+            <div class="tab-title">
+                <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                <div class="tab-links" onclick="opentab('education')">Education</div>
+                <div class="tab-links" onclick="opentab('certifications')">Certifications</div>
+                <div class="tab-links" onclick="opentab('languages')">Languages</div>
+
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li> <span> HTML5 </span><br>Designing Web Interfaces</li>
+                    <li> <span> CSS3 </span><br>Designing Web Interfaces</li>
+                    <li> <span> Java J2EE  </span><br>Designing Web Interfaces</li>
+                    <li> <span> Javascript </span><br>Responsive Web Interfaces</li>
+                    <li> <span> React JS</span><br>Designing Web Interfaces</li>
+                    <li> <span> Redux </span><br>Designing Web Interfaces</li>
+                    <li> <span> Python Selenium</span><br>Automate Applications</li>
+                    <li> <span>  MySQL </span><br>Managing the Database</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li> <span> May 2022 - March 2024</span><br>Frontend Developer at Wipro Limited</li>
+
+                    <li>
+                        &bull; Designed and developed reusable UI components using
+                        ReactJS and modern front-end development best practices.
+                      </li>
+                      <li>
+                        &bull; Architected an advanced Redux implementation that
+                        streamlined application data flow, improving code
+                        maintainability. <br /> The new system is now used by 15
+                        developers and has enhanced deployment efficiency by 25%.
+                      </li>
+                      <li>
+                        &bull; Integrated APIs for seamless data exchange, enabling the
+                        creation of dynamic and interactive user interfaces.
+                      </li>
+                      <li>
+                        &bull; Collaborated with cross-functional teams to deliver
+                        high-quality products on time, demonstrating strong
+                        communication <br /> and problem-solving skills.
+                      </li>
+                      <li>
+                        &bull; Maintained a strong understanding of modern front-end
+                        development trends and technologies, including responsive design
+                        <br /> and accessibility. Worked with popular libraries and
+                        tools such as React Router, Webpack, and Babel to optimize
+                        application <br /> performance and development workflow.
+                      </li>
+                      <li>
+                        &bull; Developed and maintained modular, reusable, and scalable
+                        codebases using ReactJS, ensuring easy maintenance and updates.
+                        <br /> Utilized React Hooks to manage state and side effects in
+                        functional components, improving code readability and
+                        maintainability.
+                      </li>
+
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li> <span> Vaageswari College of Engineering</span><br>Bachelor of Technology (2018 - 2021) <br>
+                        Computer Science (6.91 CGPA)</li>
+                    <li> <span> Mahaveer Institute of Science & Technology</span><br>Diploma (2015 - 2018) <br> Computer
+                        Science (68.28 %)</li>
+                    <li> <span> Rising Sun School</span><br>SSC(2014 - 2015) <br>(8.8 GPA)</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="certifications">
+                <ul>
+                    <li> <span> HackerRank</span> <br>
+                        &bull; Frontend Developer (React JS)<br>
+                    </li>
+                    <li> <span> AWS</span> <br>
+                        &bull; AWS Certified Cloud Practitionerr<br>
+                        &bull; AWS Certified Developer - Associate
+                    </li>
+                    <li> <span> Google </span><br>
+                        &bull; Google Cloud Certified Associate Cloud Engineer
+                    </li>
+                    <li> <span> Microsoft</span> <br>
+                        &bull; Microsoft Certified Azure Fundamentals
+                    </li>
+                    <li> <span> IBM</span> <br>
+                        &bull; SQL and Relational Databases 101
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="languages">
+                <ul>
+                    <li>
+                      &bull; <span> English </span> <br />
+                      &bull; <span> Hindi</span> <br />
+                      &bull; <span> Telugu</span> <br />
+                    </li>
+                  </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <!------------services---------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> My Services </h1>
+            <div class="service-list">
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2> Web Design</h2>
+                    <p> some paragraph</p>
+                    <a href=" #"> Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2> UI/UX Design</h2>
+                    <p> some paragraph</p>
+                    <a href=" #"> Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2> Web Application</h2>
+                    <p> some paragraph</p>
+                    <a href=" #"> Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!----------Portfolio------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Work </h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/work-1.png">
+                    <div class="layer">
+                        <h3> Social Media App</h3>
+                        <p> The app connects you to all the talented people around the world.
+                            Download it from Play store </p>
+
+                        <a href="#"> <i class="fas fa-external-link-alt"></i> </a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="Images/work-2.png">
+                    <div class="layer">
+                        <h3> Music App</h3>
+                        <p> The Music App delivers tailored playlists and curated recommendations,
+                            elevating users' enjoyment of their favorite tunes </p>
+
+                        <a href="#"> <i class="fas fa-external-link-alt"></i> </a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="Images/work-3.png">
+                    <div class="layer">
+                        <h3> E-commerce App</h3>
+                        <p> Designed and developed an innovative E-commerce App, offering streamlined
+                            browsing and secure transactions for effortless shopping. </p>
+
+                        <a href="#"> <i class="fas fa-external-link-alt"></i> </a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn">See more </a>
+        </div>
+    </div>
+
+    <!-----------------Contact-------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"> Contact Me</h1>
+                    <p> <i class="fa-solid fa-envelope"></i> Mohammedmujju327@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +91 9063238916 </p>
+
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/mujju.mohammedmujeeb">
+                            <i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/Mujeebuddin_786?t=asZAHrqymkZIqrNb32J42w&s=09">
+                            <i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/bad_boy_mujju?igsh=dGU3NjJsaDloMHp3">
+                            <i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/mohammed-mujeebuddin-6475b621b/">
+                            <i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+
+                    <a href="Images/MOHAMMED MUJEEBUDDIN.pdf" download class="btn btn2"> Download CV</a>
+
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder=" Your Message"></textarea>
+                        <button type="submit" class="btn btn2"> Submit </button>
+                    </form>
+                    <span id="msg"> </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sideba = document.getElementById("sidebar");
+        function openmenu() {
+            sideba.style.left = "0";
+        }
+
+        function closemenu() {
+            sideba.style.left = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxPjBJkK9GkMT-5Tg2tF-RyES0UBfhnGxoa3D1AJxb-r0QnJ7A0Hilpf9s1TrY08Bu-/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent Successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+
+</html>
